@@ -1,0 +1,12 @@
+node_modules/
+.env
+*.log
+build/
+dist/
+.DS_Store
+ios/Pods/
+android/.gradle/
+android/app/build/
+android/build/
+*.hprof
+.metro-health-check*

@@ -1,0 +1,32 @@
+export interface User {
+  id: number;
+  email: string;
+  fullName: string;
+  phone: string | null;
+  role: 'customer' | 'owner';
+  avatar: string | null;
+  isActive: boolean;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface AuthTokens {
+  accessToken: string;
+}
+
+export interface LoginRequest {
+  email: string;
+  password: string;
+}
+
+export interface RegisterRequest {
+  email: string;
+  password: string;
+  fullName: string;
+  phone?: string;
+}
+
+export interface AuthResponse {
+  user: User;
+  token: string;
+}
